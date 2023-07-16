@@ -1,6 +1,6 @@
 {
   "name": "maukibottv",
-  "version": "1.0.0_ALPHA",
+  "version": "1.0.0-ALPHA",
   "main": "src/main.ts",
   "scripts": {
     "build": "tsc --build",
