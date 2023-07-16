@@ -4,6 +4,8 @@ import * as fs from 'fs';
 
 import { Command } from './commands/command';
 
+if(typeof env.PASSWORD != 'string') process.exit(0);
+
 const opts = {
     identity: {
         username: 'maukibottv',
