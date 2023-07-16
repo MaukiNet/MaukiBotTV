@@ -2,6 +2,8 @@ import * as tmi from 'tmi.js';
 import env from './config';
 import * as fs from 'fs';
 
+import { Command } from './commands/command';
+
 const opts = {
     identity: {
         username: 'maukibottv',
@@ -14,7 +16,7 @@ const opts = {
 
 const client = new tmi.client(opts);
 
-const commands:Map<string, any> = new Map();
+const commands:Map<string, Command> = new Map();
 
 fs.readdir(__dirname+'/commands', (err, files) => {
     if(err) console.log(err);
@@ -27,9 +29,13 @@ fs.readdir(__dirname+'/commands', (err, files) => {
     console.log(`Loading ${JSFiles.length} Commands`);
 
     JSFiles.forEach((f, i) => {
-        let props = require(`./commands/${f}`);
+        if(f == "command.js") return;
+        let props:Command = require(`./commands/${f}`);
         console.log(`${props.name} was successfully loaded`)
         commands.set(props.name, props);
+        props.alias.forEach((alias) => {
+            commands.set(alias, props);
+        })
     });
 
 })
@@ -50,5 +56,3 @@ client.on('message', onMessageHandler);
 client.on('connected', onConnectedHandler);
 
 client.connect();
-
-//git@github.com:MaukiNet/MaukiBotTV.git
