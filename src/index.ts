@@ -33,6 +33,7 @@ fs.readdir(__dirname+'/commands', (err, files) => {
         let props:Command = require(`./commands/${f}`);
         console.log(`${props.name} was successfully loaded`)
         commands.set(props.name, props);
+        if(props.alias == null) return;
         props.alias.forEach((alias) => {
             commands.set(alias, props);
         })
