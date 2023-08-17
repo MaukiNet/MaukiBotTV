@@ -43,7 +43,7 @@ PASSWORD=
 ## Commands
 | **Invoke**         	| **Description**           | **Aliases** |
 |-----------------	  |-------------------------	| ------------- |
-| `!discord `       	| Sends link to discord-server | `!dc` |
+| `!discord`       	| Sends link to discord-server | `!dc` |
 | `!youtube`        	| Sends link to youtube-channel | `!yt` |
-| `!steam `         	| Sends steam friend-code	| - |
+| `!steam`         	| Sends steam friend-code	| - |
 | `!genshin`        	| Sends genshin uid	| `!genshinimpact` |
