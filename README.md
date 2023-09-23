@@ -15,10 +15,6 @@
 ![maven-central][]
 -->
 
-<!--
-Test comment
--->
-
 <img align="right" src="https://github.com/MaukiNet/.github/blob/main/assets/4542221e59746b200f7d3d2c96cf9210.png" height="200" width="200">
 
 # Homepage
