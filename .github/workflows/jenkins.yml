@@ -1,0 +1,14 @@
+name: Jenkins
+
+on: push
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy stage
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: 'http://93.221.240.168:8080//job/MaukiBotTV/build?token=${{ secrets.JENKINS_TOKEN }}'
+        method: 'POST'
+        
