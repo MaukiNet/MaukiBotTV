@@ -46,4 +46,4 @@ PASSWORD=
 | `!discord`       	| Sends link to discord-server | `!dc` |
 | `!youtube`        	| Sends link to youtube-channel | `!yt` |
 | `!steam`         	| Sends steam friend-code	| - |
-| `!genshin`        	| Sends genshin uid	| `!genshinimpact` |
+| `!genshinimpact`        	| Sends genshin uid	| `!genshin` |
