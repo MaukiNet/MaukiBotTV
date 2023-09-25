@@ -22,4 +22,4 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
-    - run: start /B ./start.bat
+    - run: start /B ../MaukiBotTV/MaukiBotTV/start.bat
