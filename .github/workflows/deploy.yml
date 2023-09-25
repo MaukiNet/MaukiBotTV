@@ -12,6 +12,7 @@ jobs:
     runs-on: test-runner-2
     steps:
     - uses: actions/checkout@v3
+    - run: pwd
     - run: npm install
     - run: npm run build
     - run: screen -L -S maukibottv -d -m npm run start
