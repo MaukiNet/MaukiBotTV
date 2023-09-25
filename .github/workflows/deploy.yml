@@ -9,9 +9,9 @@ on:
 
 jobs:
   deploy:
-    runs-on: test-runner-1
+    runs-on: test-runner-2
     steps:
     - uses: actions/checkout@v3
     - run: npm install
     - run: npm run build
-    - run: Start-Process -FilePath "npm" -ArgumentList "run", "start" -Wait
+    - run: screen -dmS meine_sitzung npm run start
