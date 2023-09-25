@@ -16,3 +16,4 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: screen -L -S maukibottv -d -m bash -c "npm run start"
+    - run: sleep 5
