@@ -4,6 +4,7 @@
 name: Deploy New Release
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
