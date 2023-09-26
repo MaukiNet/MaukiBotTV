@@ -30,16 +30,15 @@ Twitch-Bot für Kikis Twitch-Kanal. Leicht zu verwenden und einfach zu verstehen
 ```env
 PASSWORD=
 ```
+``.env`` file has to be located in project root (development) or in the parent folder of the project root (deployed on vsxx)
 
 ## Running (on mauki.net)
-| **Key**         	| **Value**               	|
-|-----------------	|-------------------------	|
-| Location        	| `/home/maukibottv`        |
-| Screen Name     	| `maukibottv`             	|
-| Open (detached) 	| `screen -r maukibottv`   	|
-| Open (attached) 	| `screen -x maukibottv`   	|
-| Build sources   	| `npm run build`          	|
-| Run build       	| `npm run start`          	|
+| **Key**         	  | **Value**               	        |
+|--------------------|----------------------------------|
+| Location        	  | `/home/runner1/_work/maukibottv` |
+| Service Name     	 | `maukibottv`             	       |
+| Build sources   	  | `npm run build`          	       |
+| Run build       	  | `npm run start`          	       |
 
 ## Commands
 | **Invoke**         	| **Description**           | **Aliases** |

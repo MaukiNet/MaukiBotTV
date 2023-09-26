@@ -1,12 +1,17 @@
 import path from "path";
 import dotenv from "dotenv";
+import * as os from "os";
 
+var envFilePath = "../.env";
+
+//Remove first option
+if(os.hostname() == "ubuntu-desktop-maurice" || os.hostname().startsWith("vp") || os.hostname().startsWith("ps")) envFilePath = "../../.env";
 // Parsing the env file.
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config({ path: path.resolve(__dirname, envFilePath) });
 
 // Interface to load env variables
 // Note these variables can possibly be undefined
-// as someone could skip these varibales or not setup a .env file at all
+// as someone could skip these varibales or not set up a .env file at all
 
 interface ENV {
   PASSWORD: string | undefined;
