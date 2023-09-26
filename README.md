@@ -9,7 +9,7 @@
 [version]: https://img.shields.io/static/v1?label=Download&message=v1.0.0_ALPHA&color=blue
 [download]: https://github.com/MaukiNet/MaukiBotTV/releases/tag/v1.0.0_ALPHA
 
-[![Deploy](https://github.com/MaukiNet/MaukiBotTV/actions/workflows/deploy.yml/badge.svg)](https://github.com/MaukiNet/MaukiBotTV/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/MaukiNet/MaukiBotTV/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/MaukiNet/MaukiBotTV/actions/workflows/deploy.yml)
 [ ![version][] ][download]
 [ ![license-shield][] ][license]
 <!--
