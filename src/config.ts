@@ -1,11 +1,15 @@
 import path from "path";
 import dotenv from "dotenv";
+import { log } from './index';
 import * as os from "os";
 
 var envFilePath = "../.env";
 
 //Remove first option
-if(os.hostname() == "ubuntu-desktop-maurice" || os.hostname().startsWith("vp") || os.hostname().startsWith("ps")) envFilePath = "../../.env";
+export function isServer(): boolean {
+  return (os.hostname() == "ubuntu-desktop-maurice" || os.hostname().startsWith("vp") || os.hostname().startsWith("ps"));
+}
+if(isServer()) envFilePath = "../../.env";
 // Parsing the env file.
 dotenv.config({ path: path.resolve(__dirname, envFilePath) });
 
@@ -38,7 +42,7 @@ const getConfig = (): ENV => {
 const getSanitzedConfig = (config: ENV): Config => {
   for (const [key, value] of Object.entries(config)) {
     if (value === undefined) {
-      console.log(`Missing key ${key} in config.env! Please fix.`);
+      log(`Missing key ${key} in config.env! Please fix.`);
     }
   }
   return config as Config;
