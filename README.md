@@ -25,6 +25,7 @@ Twitch-Bot für Kikis Twitch-Kanal. Leicht zu verwenden und einfach zu verstehen
 1. [Environmental Variables](#environmental-variables)
 2. [Running](#running-on-maukinet)
 3. [Commands](#commands)
+4. [Requirements](#requirements)
 
 ## Environmental Variables
 ```env
@@ -37,8 +38,8 @@ PASSWORD=
 |--------------------|----------------------------------|
 | Location        	  | `/home/runner1/_work/maukibottv` |
 | Service Name     	 | `maukibottv`             	       |
-| Build sources   	  | `npm run build`          	       |
-| Run build       	  | `npm run start`          	       |
+| Build Sources   	  | `npm run build`          	       |
+| Run Build       	  | `npm run start`          	       |
 
 ## Commands
 | **Invoke**         	| **Description**           | **Aliases** |
@@ -47,3 +48,7 @@ PASSWORD=
 | `!youtube`        	| Sends link to youtube-channel | `!yt` |
 | `!steam`         	| Sends steam friend-code	| - |
 | `!genshinimpact`        	| Sends genshin uid	| `!genshin` |
+
+## Requirements
+- Node v18
+- NPM v9
