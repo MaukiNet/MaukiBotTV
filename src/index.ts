@@ -8,17 +8,17 @@ import { Command } from './commands/command';
 const startup_time = new Date();
 const log_name = `${startup_time.getFullYear()}.${startup_time.getMonth()}.${startup_time.getDay()}_${startup_time.getHours()}-${startup_time.getMinutes()}-${startup_time.getSeconds()}`
 
-if(!fs.existsSync(__dirname.replace(`${isServer() ? "\\MaukiBotTV" : ""}\\dist`, "/logs"))) {
-    fs.mkdirSync(__dirname.replace(`${isServer() ? "\\MaukiBotTV" : ""}\\dist`, "/logs"));
+if(!fs.existsSync(__dirname.replace(`${isServer() ? "/MaukiBotTV/dist" : "\\dist"}`, "/logs"))) {
+    fs.mkdirSync(__dirname.replace(`${isServer() ? "/MaukiBotTV/dist" : "\\dist"}`, "/logs"));
 }
-fs.writeFileSync(__dirname.replace(`${isServer() ? "\\MaukiBotTV" : ""}\\dist`, "/logs/latest.txt"), "");
+fs.writeFileSync(__dirname.replace(`${isServer() ? "/MaukiBotTV/dist" : "\\dist"}`, "/logs/latest.txt"), "");
 
 export function log(str: string): void {
     const current_date = new Date();
     var new_string = `[${current_date.getHours()}:${current_date.getMinutes()}:${current_date.getSeconds()}] ${str}\n`;
 
-    fs.appendFileSync(__dirname.replace(`${isServer() ? "\\MaukiBotTV" : ""}\\dist`, "/logs/"+log_name+".txt"), new_string);
-    fs.appendFileSync(__dirname.replace(`${isServer() ? "\\MaukiBotTV" : ""}\\dist`, "/logs/"+"latest.txt"), new_string);
+    fs.appendFileSync(__dirname.replace(`${isServer() ? "/MaukiBotTV/dist" : "\\dist"}`, "/logs/"+log_name+".txt"), new_string);
+    fs.appendFileSync(__dirname.replace(`${isServer() ? "/MaukiBotTV/dist" : "\\dist"}`, "/logs/"+"latest.txt"), new_string);
     console.log(str);
 }
 
