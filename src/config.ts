@@ -7,7 +7,7 @@ var envFilePath = "../.env";
 
 //Remove first option
 export function isServer(): boolean {
-  return (os.hostname() == "ubuntu-desktop-maurice" || os.hostname().startsWith("vp") || os.hostname().startsWith("ps"));
+  return (os.hostname() == "ubuntu-desktop-maurice" || os.hostname().startsWith("vmd") || os.hostname().startsWith("ps"));
 }
 if(isServer()) envFilePath = "../../.env";
 // Parsing the env file.
