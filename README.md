@@ -18,7 +18,7 @@
 
 <img align="right" src="https://cdn.mauki.net/images/Mauki-460x460.jpg" height="200" width="200">
 
-# Homepage
+# MaukiBotTV
 Twitch-Bot für Kikis Twitch-Kanal. Leicht zu verwenden und einfach zu verstehen.
 
 ## Table of Contents
