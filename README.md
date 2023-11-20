@@ -16,7 +16,7 @@
 ![maven-central][]
 -->
 
-<img align="right" src="https://github.com/MaukiNet/.github/blob/main/assets/4542221e59746b200f7d3d2c96cf9210.png" height="200" width="200">
+<img align="right" src="https://cdn.mauki.net/images/Mauki-460x460.jpg" height="200" width="200">
 
 # Homepage
 Twitch-Bot für Kikis Twitch-Kanal. Leicht zu verwenden und einfach zu verstehen.
@@ -36,8 +36,7 @@ PASSWORD=
 ## Running (on mauki.net)
 | **Key**         	  | **Value**               	        |
 |--------------------|----------------------------------|
-| Location        	  | `/home/runner1/_work/maukibottv` |
-| Service Name     	 | `maukibottv`             	       |
+| Location        	  | `/opt/actions-runner/_work/maukibottv` |
 | Build Sources   	  | `npm run build`          	       |
 | Run Build       	  | `npm run start`          	       |
 
